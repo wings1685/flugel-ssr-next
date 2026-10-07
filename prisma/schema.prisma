@@ -15,15 +15,19 @@ datasource db {
 model Task {
   id        Int      @id @default(autoincrement())
   title     String   @db.Text
-  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  taskDetail TaskDetail?
 
   @@map("experiments_tasks")
 }
 
 model TaskDetail {
   id     Int    @id @default(autoincrement())
-  taskId Int    @map("task_id")
+  taskId Int    @map("task_id") @unique
   text   String @db.Text
+
+  task   Task   @relation(fields: [taskId], references: [id])
 
   @@map("experiments_details")
 }
