@@ -9,7 +9,7 @@ type Props = PageProps<'/'>;
 
 const getTasks = async (params: Awaited<Props['searchParams']>) => {
 	const findQuery = buildFindQuery(params);
-	const tasks = await fetchTasks(findQuery ?? {});
+	const tasks = await fetchTasks(findQuery);
 
 	return { tasks, findQuery };
 };

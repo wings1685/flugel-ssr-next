@@ -5,7 +5,7 @@ import { defaultFindValues } from "@/_global/lib/validate";
 import type { FindSchema } from "@/_global/lib/validate";
 
 export default function Find(props: FindSchema) {
-	const navigate = useRouter();
+	const router = useRouter();
 
 	const handleFind = (e: React.SubmitEvent & { currentTarget: HTMLFormElement }) => {
 		e.preventDefault();
@@ -16,7 +16,7 @@ export default function Find(props: FindSchema) {
 			sort: formData.get('sort')?.toString() ?? defaultFindValues.sort,
 		};
 		const params = new URLSearchParams(query);
-		navigate.push(`/?${params}`);
+		router.push(`/?${params}`);
 	};
 
 	return (
