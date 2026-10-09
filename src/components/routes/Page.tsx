@@ -19,10 +19,10 @@ export default async function Page(props: Props) {
 	const data = await getTasks(params);
 
 	return (
-		<main>
+		<div>
 			<Form />
 			<Find { ...data.findQuery } />
 			<List key={ JSON.stringify(data.tasks) } tasks={ data.tasks } />
-		</main>
+		</div>
 	)
 };
