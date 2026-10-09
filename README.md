@@ -9,13 +9,18 @@ Next.js SSR での挙動を見るためだけの実験場です。
 - Next.js 16.4.0
 
 - Prisma 7.10.0
+- Legendapp State
+- Nanostores
+- Valtio
 
 ## Experiments
 
 この実験場では以下を行いました。
 
 - Next.js + Prisma での CRUD 処理
+- SSR 状態汚染を防ぐグローバルストア機構の安全性検証
 
 ## Related Articles
 
 - [各 JS フレームワークのみでの DB 連携探訪記](https://wings.hatenablog.com/entry/withoutLaravelFestival)
+- [Astro 上の Solid / Svelte / Vue にグローバルストアを持たせたい](https://wings.hatenablog.com/entry/AstroGlobalStores)

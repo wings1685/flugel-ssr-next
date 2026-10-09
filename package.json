@@ -19,8 +19,7 @@
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "valtio": "^2.3.2",
-    "zustand": "^5.0.15"
+    "valtio": "^2.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
