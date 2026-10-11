@@ -35,7 +35,7 @@ export default function List({
 
 	return (
 		<div>
-			<h1>Raw Legend Stores</h1>
+			<h1>Raw Legend State</h1>
 			<fieldset>
 				<span>forServer: { rawLegendServer }</span>
 				<button onClick={ () => handleServerStore('rawLegend') }>Click</button>
@@ -44,7 +44,7 @@ export default function List({
 				<span>forClient: { rawLegend$.get().forClient }</span>
 				<button onClick={ () => setRawLegend('forClient') }>Click</button>
 			</fieldset>
-			<h1>Piquo Legend Stores</h1>
+			<h1>Piquo Legend State</h1>
 			<fieldset>
 				<span>forServer: { piquoLegendServer }</span>
 				<button onClick={ () => handleServerStore('piquoLegend') }>Click</button>
@@ -62,7 +62,7 @@ export default function List({
 				<span>forClient: { rawValtioClient.forClient }</span>
 				<button onClick={ () => setRawValtio('forClient') }>Click</button>
 			</fieldset>
-			<h1>Piquo Valtio Store</h1>
+			<h1>Piquo Valtio</h1>
 			<fieldset>
 				<span>forServer: { piquoValtioServer }</span>
 				<button onClick={ () => handleServerStore('piquoValtio') }>Click</button>
@@ -80,7 +80,7 @@ export default function List({
 				<span>forClient: { rawNanoClient.forClient }</span>
 				<button onClick={ () => setRawNano('forClient') }>Click</button>
 			</fieldset>
-			<h1>Piquo Nano Store</h1>
+			<h1>Piquo Nano Stores</h1>
 			<fieldset>
 				<span>forServer: { piquoNanoServer }</span>
 				<button onClick={ () => handleServerStore('piquoNano') }>Click</button>
