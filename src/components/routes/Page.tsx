@@ -1,9 +1,9 @@
 "use server";
 
 import { buildFindQuery, fetchTasks } from "@/server/db/tasks/fetchTasks";
-import Form from "../features/Form/Form";
-import Find from "../features/Find/Find";
-import List from "../features/List/List";
+import Form from "@/components/features/Form/Form";
+import Find from "@/components/features/Find/Find";
+import List from "@/components/features/List/List";
 
 type Props = PageProps<'/'>;
 

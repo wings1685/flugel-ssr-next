@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next start",
+    "start:ssg": "NEXT_PUBLIC_BUILD_MODE=ssg next build && NEXT_PUBLIC_BUILD_MODE=ssg npx serve@latest out",
     "lint": "eslint",
     "postinstall": "prisma skills sync || exit 0"
   },

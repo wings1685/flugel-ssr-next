@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 export default function Header() {
 	return (
 		<nav id="nav_global">
-			<a href="/">Home</a>
-			<a href="/stores">Stores</a>
+			<Link href="/">Home</Link>
+			<Link href="/stores">Stores</Link>
+			<Link href="/building">Building</Link>
 		</nav>
 	)
 }
