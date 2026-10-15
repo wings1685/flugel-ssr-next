@@ -16,7 +16,7 @@ export default function Find(props: FindSchema) {
 			sort: formData.get('sort')?.toString() ?? defaultFindValues.sort,
 		};
 		const params = new URLSearchParams(query);
-		router.push(`/?${params}`);
+		router.push(`/db?${params}`);
 	};
 
 	return (

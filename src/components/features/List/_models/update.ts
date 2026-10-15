@@ -7,5 +7,5 @@ import type { TaskSchema } from "@/_global/lib/validate";
 export const updateData = async (data?: TaskSchema) => {
 	await updateTask(data);
 
-	revalidatePath('/');
+	revalidatePath('/db');
 };
